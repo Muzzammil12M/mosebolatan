@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --Softblue: hsl(215, 51%, 70%);
+      --Cyan: hsl(178, 100%, 50%);
+      --VerydarkblueMain: hsl(217, 54%, 11%);/*main BG*/
+      --VerydarkblueCard: hsl(216, 50%, 16%);/*card BG*/
+      --VerydarkblueLine: hsl(215, 32%, 27%);/*line*/
+      --White:  hsl(0, 0%, 100%);
+     }
+    body{
+      background: var(--VerydarkblueMain);
+      font-family: sans-serif; 
+      margin:400px auto;
+     }
+    #container{
+     background: var(--VerydarkblueCard);
+     height: 32em;
+     width: 17.5em;
+     margin: auto;
+     border-radius: 1.2em;
+     display: flex;
+     padding: 1.5em;    
+     /* display: inline-block; */
+     justify-content:center;
+     display: flex;
+     }
+    #img1, .body{
+      display: flex;
+      justify-content: center;
+     }
+     
+    .image1{
+      width:17.5em;
+      border-radius: 0.7em;
+      padding: auto auto 0em auto;
+    }
+     #img:hover, h1:hover, .name:hover{
+      color: var(--Cyan);
+     }
+    .contents{
+    width: 17.5em;
+    height: 8em;
+    padding:0em ;
+    text-align: left;
+  
+    }
+   .head{
+    font-size: 1.4em;
+    color:var(--White);
+     }
+   .status{
+    width:17.5em;
+    display: flex;
+    justify-content: space-between;
+    padding:1.2em 0em;
+     }
+    .image2, .image3{
+      position:relative;
+      left: 3;
+      }
+    hr{
+      height: 0.08em;
+      background-color: var(--VerydarkblueLine);
+      border-width: 0em;
+    }
+    .image4{
+      width: 2.2em;
+    
+    }
+    figure{
+     margin:0;
+     height:2.4em;
+     width: 12.em;
+    }
+    .owner{
+      position: fixed;
+    }
+     .by, .name{
+      text-align:center;
+      /* padding: 0 0 1.6em 0; */
+    }
+    .title, .right, .by{
+      color: var(--Softblue);
+    }
+    
+    footer{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div id="container">
+      <div>
+        <div id="img1">
+          <img src="/images/image-equilibrium.jpg" alt="Equilibrium-image" class="image1">
+        </div>
+          <div class="body">
+            <div class="contents">
+              <h1 class="head">Equilibrium #3429</h1>
+              <p class="title">Our Equilibrium collection promotes balance and calm.</p>
+              <div class="status">
+                <span class="left" style="color:var(--Cyan)"><img src="/images/icon-ethereum.svg" alt="icon-ethereum" class="image2" style="padding-right: 0.5em;">
+                0.041 ETH
+                </span>
+                <span class="right">
+                  <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" style="padding-right: 0.5em;"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9" class="image3"/></svg>3 days left
+                </span>
+              </div>
+              <div class="rule">
+                <hr>
+              </div>
+            <figure>
+              <div class="owner">
+              <img src="/images/image-avatar.png" alt="image-avatar" class="image4" style="padding:0.5em 0.8em 0 0;">
+              <span class="by" >Creation of</span> 
+              <span class="name">Jules Wyvern </span>
+             </div>
+            </figure>
+            </div>
+          </div>       
+      </div>
+    </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Muzzammil</a>.
+  </footer>
+</body>
+</html>
